@@ -1,0 +1,40 @@
+h1 {
+    color: #E7503D;
+    font-size: 17em;
+    font-stretch: extra-expanded;
+    font-variant: small-caps;
+    margin-top: -8rem;
+}
+
+.logo {
+    width: 10em;
+    padding-top: 2em;
+}
+
+.anno {
+    margin-bottom: -25px;
+    font-family: 'Palatino';
+    font-variant: small-caps;
+    font-size: 2em;
+}
+
+.logo-line {
+    background-color: #E7503D;
+    min-width: 35%;
+    margin-right: 50px;
+    margin-left: 50px;
+    height: 55px;
+    /* margin-top: 19px; */
+    position: relative;
+    
+}
+
+.logo-line-divider {
+    width: 150px;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+}

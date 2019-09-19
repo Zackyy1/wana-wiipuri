@@ -31,3 +31,10 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background: #FBEFDB;
+  background-image: url('../src//images/paperbg.png');
+  background-repeat: repeat;
+  background-size: 250px;
+}
