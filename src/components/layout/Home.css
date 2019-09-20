@@ -53,10 +53,18 @@ h1 {
     
 }
 
+.logo-line-right p {
+    color: rgb(255, 214, 214);
+    font-size: 2em;
+    font-family: 'Alike';
+    margin-top: 5px;
+}
+
 .inline {
     display: flex;
     text-align: center;
     justify-content: left;
+    margin-left: 30px;
     margin-top: 20px;
 }
 
@@ -127,6 +135,36 @@ h1 {
 }
 
 .ints {
-    max-width: 65%;
+    max-width: 100%;
     margin-top: -2em;
+}
+
+.papa {
+    /* margin: 0 auto; */
+    /* max-width: 400px; */
+}
+
+.starters { 
+    text-align: center;
+    float: right;
+    font-family: 'Alike';
+    width: 33vw;
+    /* float:right; */
+    /* margin: 0 auto; */
+}
+.starters h2 {
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-size: 3.2em;
+}
+
+.starters p {
+    font-weight: bold;
+
+    font-variant: small-caps;
+    font-size: 1.8em;
+}
+
+.container {
+    max-width: 66vw;
 }
