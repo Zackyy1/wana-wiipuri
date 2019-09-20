@@ -3,29 +3,83 @@ h1 {
     font-size: 17em;
     font-stretch: extra-expanded;
     font-variant: small-caps;
-    margin-top: -8rem;
+    margin-top: -10rem;
+    font-weight: bold;
 }
 
 .logo {
-    width: 10em;
+    max-width: 10em;
     padding-top: 2em;
+    padding: 0 auto;
+    /* margin: 0 2em; */
+
+    
+    align-self: center;
+    display: grid;
+
 }
 
 .anno {
     margin-bottom: -25px;
-    font-family: 'Palatino';
+    font-family: 'Alike';
     font-variant: small-caps;
-    font-size: 2em;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-.logo-line {
+.logo-line-left {
     background-color: #E7503D;
-    min-width: 35%;
-    margin-right: 50px;
-    margin-left: 50px;
-    height: 55px;
-    /* margin-top: 19px; */
     position: relative;
+    width: 760px;
+    bottom: 0;
+    height: 55px;
+    max-width: 760px;
+    float: right;
+    /* margin-top: 123px; */
+    /* position: relative; */
+    
+}
+.logo-line-right {
+    background-color: #E7503D;
+    position: relative;
+    width: 760px;
+    bottom: 0;
+    margin-bottom: 0;
+    height: 55px;
+    max-width: 760px;
+    float: left;
+    /* margin-top: 123px; */
+    /* position: relative; */
+    
+}
+
+.inline {
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    margin-top: 20px;
+}
+
+.inline button {
+    padding-right: 20px;
+    border:none;
+    background: none;
+    color: #E7503D;
+    font-size: 4em;
+    font-weight: bold;
+    /* position: absolute; */
+}
+
+.inline button:focus {
+    border: none;
+    outline: none;
+}
+
+.inline h2 {
+    color: #E7503D;
+    font-size: 5em;
+    text-align: center;
+    margin-right: 10px;
     
 }
 
@@ -37,4 +91,42 @@ h1 {
     display: flex;
     justify-content: center;
     margin-top: -60px;
+    /* margin: 0 0 auto 0; */
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    height: 35vh;
+}
+
+.logo-section-contact {
+    position: relative;
+    /* position: absolute; */
+    /* height: 100%; */
+    width: 35%;
+    margin-top: 5em;
+    padding-right: 2em;
+    bottom: 0;
+    left: 0;
+}
+
+.logo-section-contact h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: right;  
+}
+.logo-section-languages {
+    position: relative;
+    /* position: absolute; */
+    /* height: 100%; */
+    width: 35%;
+    margin-top: 5em;
+    padding-left: 2em;
+    bottom: 0;
+    right: 0;
+}
+
+.ints {
+    max-width: 65%;
+    margin-top: -2em;
 }
