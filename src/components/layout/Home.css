@@ -7,6 +7,12 @@ h1 {
     font-weight: bold;
 }
 
+div .starters h2 {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-family: "Alike";
+}
+
 .logo {
     max-width: 10em;
     padding-top: 2em;
@@ -167,4 +173,12 @@ h1 {
 
 .container {
     max-width: 66vw;
+}
+
+
+.menu-lines {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    
 }

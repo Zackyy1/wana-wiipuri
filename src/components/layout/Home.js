@@ -62,15 +62,17 @@ export class Home extends Component {
                 <div className="row">
                 {/* LEFT SIDE OF MENU */}
                 
-                <div className="col-4 starters">
+                <div className="col starters">
+                    <h2>Starters</h2>
+                    <div className="menu-lines"></div>
                     { this.makeStarters() }
                 </div>
                 {/* PAPA PITCTURE */}
-                <div className="col-4 papa">
-                    <img src={ints} className="ints" alt="Professor" />
+                <div className="col-3 papa">
+                    {/* <img src={ints} className="ints" alt="Professor" /> */}
                 </div>
                 {/* RIGHT SIDE OF MENU */}
-                <div className="col-4">
+                <div className="col">
 
                 </div>
 
