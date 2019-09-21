@@ -5,9 +5,15 @@ import './Home.css'
 import Logo from "../../images/WW_LOGO_TRNSPRNT.png";
 import Cookies from 'universal-cookie'
 import Home from './Home'
+import data from '../../languages';
 
 
 export class Navbar extends Component {
+
+        state = {
+            lang: "en",
+        }
+
 
     componentDidMount() {
         const cookies = new Cookies();
@@ -21,8 +27,8 @@ export class Navbar extends Component {
         cookies.set("lang", e.target.id);
         console.log(cookies.get("lang"))
         const Parent = ReactDOM.render(<Home />, document.getElementById('home'));
-
-        Parent.forceUpdate()    
+        this.forceUpdate();
+        Parent.forceUpdate();    
     }
     
 
@@ -30,6 +36,8 @@ export class Navbar extends Component {
 
 
     render() {
+        const cookies = new Cookies();
+        var lang = cookies.get("lang") || "en";
         return (
             <div>
             <div className='logo-section'>
@@ -59,16 +67,30 @@ export class Navbar extends Component {
     <div className="logo-line-right"> <p>RESTAURANT WANA WIIPURI • PIKK 33 • TALINN  </p></div>
 </div>
 
-{/* <div className="logo-line-divider"></div> */}
-
-
-{/*  */}
-{/* <div className="logo-line"></div> */}
 </div>
 
-
-{/* <p>Contact</p> */}
 <h1>Wana Wiipuri</h1>
+
+    <div className="nav-panel">
+            {/* Drinks, Special offers, Group menu, The Christmas feast */}
+            <button className="nav-button">{data.text.drinks[lang]}</button>
+            <div className="dropdown">
+                <button className="nav-button dropdown-toggle" id="menuDropdownButton" data-toggle="dropdown-disabled" aria-haspopup="true" aria-expanded="true">{data.text.menu[lang]}</button>
+                <div className="dropdown-menu" aria-labelledby="menuDropdownButton" id="menu-dropdown">
+                    <button className="nav-button-dropdown dropdown-item">{data.text.special[lang]}</button>
+                    <button className="nav-button-dropdown dropdown-item">{data.text.feast[lang]}</button>
+                    <button className="nav-button-dropdown dropdown-item">{data.text.group[lang]}</button>
+
+
+                </div>
+            </div>
+            
+            <button className="nav-button">{data.text.gallery[lang]}</button>
+            {/* <button className="nav-button">{data.text.special[lang]}</button> */}
+
+    </div>
+
+
             </div>
         )
     }

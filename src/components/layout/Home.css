@@ -197,3 +197,85 @@ div .starters h2 {
     border-bottom: solid black 3px;
     height: 50px;
 }
+
+.nav-panel {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: -25px;
+}
+
+.nav-button {
+    width: 20vw;
+    color: #E7503D;
+    font-size: 1.5em;
+    overflow-wrap: normal;
+    background: none;
+    border: none;
+    font-weight: bold;
+    border-bottom: solid #E7503D 2px;
+    border-top: solid #E7503D 2px;
+
+}
+
+.nav-button-dropdown {
+    width: calc(20vw - 4px);
+    color: #E7503D;
+    font-size: 1.5em;
+    overflow-wrap: normal;
+    background: none;
+    border: none;
+    font-weight: bold;
+    /* border-bottom: solid #E7503D 2px; */
+    /* border-top: solid #E7503D 2px; */
+}
+
+.nav-button-dropdown:hover {
+    background-color: #E7503D;
+    color: rgb(233, 233, 233);
+    transition: background-color 0.2s;
+}
+.nav-button-dropdown:focus {
+    background-color: #E7503D;
+    color: rgb(233, 233, 233);
+    transition: background-color 0.2s;
+}
+.nav-button-dropdown:active {
+    background-color: #E7503D;
+    color: rgb(233, 233, 233);
+    transition: background-color 0.2s;
+}
+
+.nav-button:focus {
+    /* border: none; */
+    outline: none;
+    
+}
+
+.nav-button:hover {
+    background-color: #E7503D;
+    color: rgb(233, 233, 233);
+    transition: background-color 0.2s;
+}
+
+#menuDropdownButton:hover ~ #menu-dropdown {
+    display: block;
+    transition: display 1s 1s;
+}
+
+#menu-dropdown:hover {
+    display: block;
+    transition: 1s;
+}
+
+#menu-dropdown {
+    text-align: center;
+    background-color: #FBEFDB;
+    background-image: url('../../images/paperbg.png');
+    background-repeat: repeat;
+    background-size: 250px;
+    border: solid #E7503D 2px;
+    color: E7503D;
+    
+    margin-top: -2px;
+}
