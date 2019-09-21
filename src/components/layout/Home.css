@@ -1,9 +1,9 @@
 h1 {
     color: #E7503D;
-    font-size: 17em;
+    font-size: 14em;
     font-stretch: extra-expanded;
     font-variant: small-caps;
-    margin-top: -10rem;
+    margin-top: -7rem;
     font-weight: bold;
 }
 
@@ -14,19 +14,18 @@ div .starters h2 {
 }
 
 .logo {
-    max-width: 10em;
-    padding-top: 2em;
-    padding: 0 auto;
+    max-width: 8em;
+    padding-top: 3em;
+    /* padding: 0 auto; */
     /* margin: 0 2em; */
 
-    
     align-self: center;
-    display: grid;
+    /* display: grid; */
 
 }
 
 .anno {
-    margin-bottom: -25px;
+    margin-bottom: -50px;
     font-family: 'Alike';
     font-variant: small-caps;
     font-size: 1.5em;
@@ -36,10 +35,10 @@ div .starters h2 {
 .logo-line-left {
     background-color: #E7503D;
     position: relative;
-    width: 760px;
+    width: 625px;
     bottom: 0;
-    height: 55px;
-    max-width: 760px;
+    height: 40px;
+    /* max-width: 760px; */
     float: right;
     /* margin-top: 123px; */
     /* position: relative; */
@@ -48,11 +47,11 @@ div .starters h2 {
 .logo-line-right {
     background-color: #E7503D;
     position: relative;
-    width: 760px;
+    width: 625px;
     bottom: 0;
     margin-bottom: 0;
-    height: 55px;
-    max-width: 760px;
+    height: 40px;
+    /* max-width: 760px; */
     float: left;
     /* margin-top: 123px; */
     /* position: relative; */
@@ -61,9 +60,9 @@ div .starters h2 {
 
 .logo-line-right p {
     color: rgb(255, 214, 214);
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: 'Alike';
-    margin-top: 5px;
+    margin-top: 3px;
 }
 
 .inline {
@@ -75,11 +74,11 @@ div .starters h2 {
 }
 
 .inline button {
-    padding-right: 20px;
+    padding-right: 30px;
     border:none;
     background: none;
     color: #E7503D;
-    font-size: 4em;
+    font-size: 3em;
     font-weight: bold;
     /* position: absolute; */
 }
@@ -161,24 +160,40 @@ div .starters h2 {
 .starters h2 {
     font-weight: bolder;
     font-variant: small-caps;
-    font-size: 3.2em;
+    font-size: fit-width;
+   text-size-adjust: auto;
 }
 
 .starters p {
     font-weight: bold;
-
+    
     font-variant: small-caps;
-    font-size: 1.8em;
+    font-size: 1.4em;
 }
 
 .container {
-    max-width: 66vw;
+    max-width: 85vw;
 }
 
 
 .menu-lines {
-    height: 2px;
+    /* height: 2px;
     width: 100%;
-    background-color: black;
+    background-color: black; */
     
+}
+
+.item-name {
+    /* text-decoration-line: underline; */
+    border-bottom: solid black 2px;
+    display: inline-block;
+    
+    
+}
+
+.header {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    border-bottom: solid black 3px;
+    height: 50px;
 }

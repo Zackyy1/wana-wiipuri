@@ -1,4 +1,13 @@
 const data = {
+    text: {
+        starters: {
+            key: "starters",
+            ru: "закуски",
+            en: "starters",
+            et: "eelroad",
+            fi: "alkuruoat"
+        }
+    },
     starters: {
         pickles: {
             price: "5,0",
@@ -16,7 +25,8 @@ const data = {
             fi: {name: "vorschmack", desc: "punajuurikermaa / suolakurkkua / tuorejuustovaahtoa"},
             en: {name: "vorschmack", desc: "beetroot cream / gherkins / cream cheese foam"},
         },
-}
+    }
+
    
 
 }

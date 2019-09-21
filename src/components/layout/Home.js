@@ -16,11 +16,6 @@ export class Home extends Component {
         
     // }
 
-    componentDidUpdate(prevProps, prevState) {
-        console.log("Component updated")
-    }
-    
-    
     
 
     makeStarters() {
@@ -34,8 +29,10 @@ export class Home extends Component {
         }
         console.log(starters)
 
+        // var lang = this.state.lang;
         const cookies = new Cookies();
         var lang = cookies.get("lang") || "en"
+        // this.setState({lang})
         
        return starters.map(item => (
             
@@ -54,6 +51,10 @@ export class Home extends Component {
 
     render() {
         console.log(data)
+
+        const cookies = new Cookies();
+        var lang = cookies.get("lang") || "en"
+       
         return (
             <div id="home">
 
@@ -63,13 +64,13 @@ export class Home extends Component {
                 {/* LEFT SIDE OF MENU */}
                 
                 <div className="col starters">
-                    <h2>Starters</h2>
-                    <div className="menu-lines"></div>
+                    <h2 className="header">{data.text.starters[lang]}</h2>
                     { this.makeStarters() }
                 </div>
+
                 {/* PAPA PITCTURE */}
-                <div className="col-3 papa">
-                    {/* <img src={ints} className="ints" alt="Professor" /> */}
+                <div className="col-4 papa">
+                    <img src={ints} className="ints" alt="Professor" />
                 </div>
                 {/* RIGHT SIDE OF MENU */}
                 <div className="col">
