@@ -1,9 +1,9 @@
 h1 {
     color: #E7503D;
-    font-size: 14em;
-    font-stretch: extra-expanded;
+    font-size: 10.5em;
+    /* font-stretch: extra-expanded; */
     font-variant: small-caps;
-    margin-top: -7rem;
+    margin-top: -1.5rem;
     font-weight: bold;
 }
 
@@ -14,18 +14,35 @@ div .starters h2 {
 }
 
 .logo {
-    max-width: 8em;
-    padding-top: 3em;
+    /* display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    text-align: center; */
+    display: absolute;
+    right: 0; 
+    min-width: 100%;
+    max-width: 100%;
+
+    /* max-width: 10vw; */
+    /* min-width: 100%; */
+
+    /* padding-top: 4em; */
     /* padding: 0 auto; */
     /* margin: 0 2em; */
 
-    align-self: center;
+    /* align-self: center; */
     /* display: grid; */
 
 }
 
+.logo-img {
+    width: 100%;
+}
+
 .anno {
-    margin-bottom: -50px;
+    /* margin-bottom: -50px; */
     font-family: 'Alike';
     font-variant: small-caps;
     font-size: 1.5em;
@@ -34,8 +51,8 @@ div .starters h2 {
 
 .logo-line-left {
     background-color: #E7503D;
-    position: relative;
-    width: 625px;
+    /* position: absolute; */
+    width: 100%;
     bottom: 0;
     height: 40px;
     /* max-width: 760px; */
@@ -46,13 +63,13 @@ div .starters h2 {
 }
 .logo-line-right {
     background-color: #E7503D;
-    position: relative;
-    width: 625px;
+    position: absolute;
+    min-width: 100%;
     bottom: 0;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
     height: 40px;
     /* max-width: 760px; */
-    float: left;
+    /* float: left; */
     /* margin-top: 123px; */
     /* position: relative; */
     
@@ -60,17 +77,19 @@ div .starters h2 {
 
 .logo-line-right p {
     color: rgb(255, 214, 214);
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: 'Alike';
-    margin-top: 3px;
+    margin-top: 7px;
 }
 
 .inline {
     display: flex;
+    /* max-width: 25%; */
+    min-height: 100%;
     text-align: center;
-    justify-content: left;
-    margin-left: 30px;
-    margin-top: 20px;
+    /* justify-content: left; */
+    /* margin-left: 30px;
+    margin-top: 13%; */
 }
 
 .inline button {
@@ -78,7 +97,7 @@ div .starters h2 {
     border:none;
     background: none;
     color: #E7503D;
-    font-size: 3em;
+    font-size: 1.5em;
     font-weight: bold;
     /* position: absolute; */
 }
@@ -92,7 +111,7 @@ div .starters h2 {
     color: #E7503D;
     font-size: 5em;
     text-align: center;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     
 }
 
@@ -101,42 +120,46 @@ div .starters h2 {
 }
 
 .logo-section {
-    display: flex;
-    justify-content: center;
-    margin-top: -60px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* margin-top: -60px; */
     /* margin: 0 0 auto 0; */
-    align-self: center;
+    /* align-self: center;
     align-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center; */
     height: 35vh;
 }
 
 .logo-section-contact {
-    position: relative;
-    /* position: absolute; */
+    /* position: relative; */
+    position: absolute;
     /* height: 100%; */
-    width: 35%;
-    margin-top: 5em;
-    padding-right: 2em;
+    width: 100%;
+    /* height: 100%;  */
+    /* margin-top: 5em; */
+    /* padding-right: 2em; */
     bottom: 0;
-    left: 0;
+    /* left: 0; */
 }
 
 .logo-section-contact h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     text-align: right;  
+    
 }
 .logo-section-languages {
-    position: relative;
+    position: absolute;
     /* position: absolute; */
     /* height: 100%; */
-    width: 35%;
-    margin-top: 5em;
-    padding-left: 2em;
+    width: 100%;
+    /* min-height: 25vh; */
+    /* margin-top: 5em; */
+    /* padding-left: 2em; */
     bottom: 0;
-    right: 0;
+    left: 0;
+    /* right: 0; */
 }
 
 .ints {
@@ -172,7 +195,7 @@ div .starters h2 {
 }
 
 .container {
-    max-width: 85vw;
+    /* max-width: 85vw; */
 }
 
 
@@ -206,7 +229,7 @@ div .starters h2 {
 }
 
 .nav-button {
-    width: 20vw;
+    width: 28vw;
     color: #E7503D;
     font-size: 1.5em;
     overflow-wrap: normal;
@@ -219,7 +242,7 @@ div .starters h2 {
 }
 
 .nav-button-dropdown {
-    width: calc(20vw - 4px);
+    width: calc(28vw - 4px);
     color: #E7503D;
     font-size: 1.5em;
     overflow-wrap: normal;
@@ -275,7 +298,19 @@ div .starters h2 {
     background-repeat: repeat;
     background-size: 250px;
     border: solid #E7503D 2px;
-    color: E7503D;
+    color: #E7503D;
     
     margin-top: -2px;
+}
+
+.fixed {
+    height: 20vh;
+    /* min-width: 33vw;; */
+    /* margin: 0 auto; */
+}
+
+.logo-section .col-5 {
+    /* max-height: 20vh; */
+
+    width: 50vw;
 }

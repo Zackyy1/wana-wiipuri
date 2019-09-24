@@ -93,9 +93,15 @@ const data = {
             fi: {name: "merenantimia", desc: "(riittää kahdelle) graavilohta / tonnikalakastiketta / savusilliä / taimenenmätiä / sillimätiä"},
             en: {name: "seafood selection", desc: "(enough for two) salted salmon / tuna cream / smoked herring / trout roe / herring roe"},
         },
-        // meatselection: {
-
-        // },
+        meatselection: {
+            price: "16,9",
+            key: "meatselection",
+            ru: {name: "ассорти из морепродуктов", desc: "(хватает на двоих) солёный лосось / соус из тунца / копчёная селёдка / икра форели / икра сельди"},
+            et: {name: "mereannivalik", desc: "(jätkub ka kahele) soolalõhe / tuunikalakreem / suitsuheeringas / forellimari / herringamari"},
+            fi: {name: "merenantimia", desc: "(riittää kahdelle) graavilohta / tonnikalakastiketta / savusilliä / taimenenmätiä / sillimätiä"},
+            en: {name: "seafood selection", desc: "(enough for two) salted salmon / tuna cream / smoked herring / trout roe / herring roe"},
+        
+        },
         // veal: {
 
         // },
