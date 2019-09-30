@@ -94,7 +94,6 @@ const data = {
             en: {name: "seafood selection", desc: "(enough for two) salted salmon / tuna cream / smoked herring / trout roe / herring roe"},
         },
         meatselection: {
-<<<<<<< HEAD
             price: "14,6",
             key: "meatselection",
             ru: {name: "мясное ассорти", desc: "(хватает на двоих) говяжий язык / копченая утка / мясной паштет / сало"},
@@ -142,31 +141,6 @@ const data = {
             fi: {name: "silakka", desc: "marinoitua sipulia / munaa 62C°"},
             en: {name: "baltic herring", desc: "pickled onion, egg 62C°"},
         }
-=======
-            price: "16,9",
-            key: "meatselection",
-            ru: {name: "ассорти из морепродуктов", desc: "(хватает на двоих) солёный лосось / соус из тунца / копчёная селёдка / икра форели / икра сельди"},
-            et: {name: "mereannivalik", desc: "(jätkub ka kahele) soolalõhe / tuunikalakreem / suitsuheeringas / forellimari / herringamari"},
-            fi: {name: "merenantimia", desc: "(riittää kahdelle) graavilohta / tonnikalakastiketta / savusilliä / taimenenmätiä / sillimätiä"},
-            en: {name: "seafood selection", desc: "(enough for two) salted salmon / tuna cream / smoked herring / trout roe / herring roe"},
-        
-        },
-        // veal: {
-
-        // },
-        // caesar: {
-
-        // },
-        // tartar: {
-
-        // },
-        // herringtrio: {
-
-        // },
-        // balticherring: {
-
-        // }
->>>>>>> a34fd6cddbde3c55fe072dfcc9f46b33a42b41fc
     }
 
    
