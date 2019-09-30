@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-
-import './Home.css'
+import { withRouter } from 'react-router-dom'
+import './Navbar.css'
 import Logo from "../../images/WW_LOGO_TRNSPRNT.png";
 import Cookies from 'universal-cookie'
 import Home from './Home'
@@ -31,6 +31,13 @@ export class Navbar extends Component {
         Parent.forceUpdate();    
     }
     
+    toHerku() {
+        this.props.history.push("/herku")
+    }
+
+    goHome() {
+        this.props.history.push("/")
+    }
 
     
 
@@ -69,7 +76,7 @@ export class Navbar extends Component {
 
 </div>
 
-<h1>Wana Wiipuri</h1>
+<a className="invisbutton" href="/" onClick={(e) => this.goHome(e)}><h1>Wana Wiipuri</h1></a>
 
     <div className="nav-panel">
             {/* Drinks, Special offers, Group menu, The Christmas feast */}
@@ -77,7 +84,7 @@ export class Navbar extends Component {
             <div className="dropdown">
                 <button className="nav-button dropdown-toggle" id="menuDropdownButton" data-toggle="dropdown-disabled" aria-haspopup="true" aria-expanded="true">{data.text.menu[lang]}</button>
                 <div className="dropdown-menu" aria-labelledby="menuDropdownButton" id="menu-dropdown">
-                    <button className="nav-button-dropdown dropdown-item">{data.text.special[lang]}</button>
+                    <button onClick={() => this.toHerku()} className="nav-button-dropdown dropdown-item">{data.text.special[lang]}</button>
                     <button className="nav-button-dropdown dropdown-item">{data.text.feast[lang]}</button>
                     <button className="nav-button-dropdown dropdown-item">{data.text.group[lang]}</button>
 
@@ -96,4 +103,4 @@ export class Navbar extends Component {
     }
 }
 
-export default Navbar
+export default withRouter(Navbar)

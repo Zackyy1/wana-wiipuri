@@ -1,11 +1,5 @@
-h1 {
-    color: #E7503D;
-    font-size: 14em;
-    font-stretch: extra-expanded;
-    font-variant: small-caps;
-    margin-top: -7rem;
-    font-weight: bold;
-}
+
+
 
 div .starters h2 {
     font-variant: small-caps;
@@ -13,131 +7,7 @@ div .starters h2 {
     font-family: "Alike";
 }
 
-.logo {
-    max-width: 8em;
-    padding-top: 3em;
-    /* padding: 0 auto; */
-    /* margin: 0 2em; */
 
-    align-self: center;
-    /* display: grid; */
-
-}
-
-.anno {
-    margin-bottom: -50px;
-    font-family: 'Alike';
-    font-variant: small-caps;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.logo-line-left {
-    background-color: #E7503D;
-    position: relative;
-    width: 625px;
-    bottom: 0;
-    height: 40px;
-    /* max-width: 760px; */
-    float: right;
-    /* margin-top: 123px; */
-    /* position: relative; */
-    
-}
-.logo-line-right {
-    background-color: #E7503D;
-    position: relative;
-    width: 625px;
-    bottom: 0;
-    margin-bottom: 0;
-    height: 40px;
-    /* max-width: 760px; */
-    float: left;
-    /* margin-top: 123px; */
-    /* position: relative; */
-    
-}
-
-.logo-line-right p {
-    color: rgb(255, 214, 214);
-    font-size: 1.5em;
-    font-family: 'Alike';
-    margin-top: 3px;
-}
-
-.inline {
-    display: flex;
-    text-align: center;
-    justify-content: left;
-    margin-left: 30px;
-    margin-top: 20px;
-}
-
-.inline button {
-    padding-right: 30px;
-    border:none;
-    background: none;
-    color: #E7503D;
-    font-size: 3em;
-    font-weight: bold;
-    /* position: absolute; */
-}
-
-.inline button:focus {
-    border: none;
-    outline: none;
-}
-
-.inline h2 {
-    color: #E7503D;
-    font-size: 5em;
-    text-align: center;
-    margin-right: 10px;
-    
-}
-
-.logo-line-divider {
-    width: 150px;
-}
-
-.logo-section {
-    display: flex;
-    justify-content: center;
-    margin-top: -60px;
-    /* margin: 0 0 auto 0; */
-    align-self: center;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    height: 35vh;
-}
-
-.logo-section-contact {
-    position: relative;
-    /* position: absolute; */
-    /* height: 100%; */
-    width: 35%;
-    margin-top: 5em;
-    padding-right: 2em;
-    bottom: 0;
-    left: 0;
-}
-
-.logo-section-contact h2 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    text-align: right;  
-}
-.logo-section-languages {
-    position: relative;
-    /* position: absolute; */
-    /* height: 100%; */
-    width: 35%;
-    margin-top: 5em;
-    padding-left: 2em;
-    bottom: 0;
-    right: 0;
-}
 
 .ints {
     max-width: 100%;
@@ -175,14 +45,6 @@ div .starters h2 {
     max-width: 85vw;
 }
 
-
-.menu-lines {
-    /* height: 2px;
-    width: 100%;
-    background-color: black; */
-    
-}
-
 .item-name {
     /* text-decoration-line: underline; */
     border-bottom: solid black 2px;
@@ -198,84 +60,3 @@ div .starters h2 {
     height: 50px;
 }
 
-.nav-panel {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    margin-top: -25px;
-}
-
-.nav-button {
-    width: 20vw;
-    color: #E7503D;
-    font-size: 1.5em;
-    overflow-wrap: normal;
-    background: none;
-    border: none;
-    font-weight: bold;
-    border-bottom: solid #E7503D 2px;
-    border-top: solid #E7503D 2px;
-
-}
-
-.nav-button-dropdown {
-    width: calc(20vw - 4px);
-    color: #E7503D;
-    font-size: 1.5em;
-    overflow-wrap: normal;
-    background: none;
-    border: none;
-    font-weight: bold;
-    /* border-bottom: solid #E7503D 2px; */
-    /* border-top: solid #E7503D 2px; */
-}
-
-.nav-button-dropdown:hover {
-    background-color: #E7503D;
-    color: rgb(233, 233, 233);
-    transition: background-color 0.2s;
-}
-.nav-button-dropdown:focus {
-    background-color: #E7503D;
-    color: rgb(233, 233, 233);
-    transition: background-color 0.2s;
-}
-.nav-button-dropdown:active {
-    background-color: #E7503D;
-    color: rgb(233, 233, 233);
-    transition: background-color 0.2s;
-}
-
-.nav-button:focus {
-    /* border: none; */
-    outline: none;
-    
-}
-
-.nav-button:hover {
-    background-color: #E7503D;
-    color: rgb(233, 233, 233);
-    transition: background-color 0.2s;
-}
-
-#menuDropdownButton:hover ~ #menu-dropdown {
-    display: block;
-    transition: display 1s 1s;
-}
-
-#menu-dropdown:hover {
-    display: block;
-    transition: 1s;
-}
-
-#menu-dropdown {
-    text-align: center;
-    background-color: #FBEFDB;
-    background-image: url('../../images/paperbg.png');
-    background-repeat: repeat;
-    background-size: 250px;
-    border: solid #E7503D 2px;
-    color: E7503D;
-    
-    margin-top: -2px;
-}

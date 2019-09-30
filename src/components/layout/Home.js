@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import './Home.css'
+import { withRouter } from 'react-router-dom'
+
+
 import ints from '../../images/WW_indrek.png';
 import data from '../../languages';
 import Cookies from 'universal-cookie'
@@ -50,6 +53,8 @@ export class Home extends Component {
 
 
     render() {
+        console.log(this.props)
+
         console.log(data)
 
         const cookies = new Cookies();
@@ -85,4 +90,4 @@ export class Home extends Component {
     }
 }
 
-export default Home
+export default withRouter(Home)
