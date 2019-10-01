@@ -1,25 +1,28 @@
 h1 {
     color: #E7503D;
-    font-size: 14em;
+    font-size: 9.5rem;
     font-stretch: extra-expanded;
     font-variant: small-caps;
-    margin-top: -7rem;
+    /* margin-top: -7rem; */
     font-weight: bold;
 }
 
-.logo {
+.logo-img {
     max-width: 8em;
-    padding-top: 3em;
+   
     /* padding: 0 auto; */
     /* margin: 0 2em; */
 
     align-self: center;
     /* display: grid; */
+}
 
+.logo {
+    /* padding-top: 3em; */
 }
 
 .anno {
-    margin-bottom: -50px;
+    /* margin-bottom: -50px; */
     font-family: 'Alike';
     font-variant: small-caps;
     font-size: 1.5em;
@@ -29,7 +32,7 @@ h1 {
 .logo-line-left {
     background-color: #E7503D;
     position: relative;
-    width: 625px;
+    width: inherit;
     bottom: 0;
     height: 40px;
     /* max-width: 760px; */
@@ -41,7 +44,7 @@ h1 {
 .logo-line-right {
     background-color: #E7503D;
     position: relative;
-    width: 625px;
+    width: inherit;
     bottom: 0;
     margin-bottom: 0;
     height: 40px;
@@ -54,7 +57,7 @@ h1 {
 
 .logo-line-right p {
     color: rgb(255, 214, 214);
-    font-size: 1.5em;
+    font-size: 100%;
     font-family: 'Alike';
     margin-top: 3px;
 }
@@ -62,17 +65,21 @@ h1 {
 .inline {
     display: flex;
     text-align: center;
-    justify-content: left;
-    margin-left: 30px;
-    margin-top: 20px;
+    justify-content: center;
+    height: 114.8px;
+    /* margin-left: 30px;
+    margin-top: 20px; */
 }
 
 .inline button {
-    padding-right: 30px;
+    /* padding-right: -50px;*/
+    padding-left: 10px; 
     border:none;
+    position: relative;
+    /* top: 0; */
     background: none;
     color: #E7503D;
-    font-size: 3em;
+    font-size: 2rem;
     font-weight: bold;
     /* position: absolute; */
 }
@@ -83,10 +90,13 @@ h1 {
 }
 
 .inline h2 {
+    border:none;
+    position: relative;
+    /* top: 0; */
+    background: none;
     color: #E7503D;
-    font-size: 5em;
-    text-align: center;
-    margin-right: 10px;
+    font-size: 5rem;
+    /* font-weight: bold; */
     
 }
 
@@ -95,9 +105,9 @@ h1 {
 }
 
 .logo-section {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
-    margin-top: -60px;
+    /* margin-top: -60px; */
     /* margin: 0 0 auto 0; */
     align-self: center;
     align-content: center;
@@ -110,9 +120,10 @@ h1 {
     position: relative;
     /* position: absolute; */
     /* height: 100%; */
-    width: 35%;
+    width: 100%;
     margin-top: 5em;
     padding-right: 2em;
+    height: fit-content;
     bottom: 0;
     left: 0;
 }
@@ -124,11 +135,13 @@ h1 {
 }
 .logo-section-languages {
     position: relative;
+    height: fit-content;
     /* position: absolute; */
     /* height: 100%; */
-    width: 35%;
+    width: 100%;
     margin-top: 5em;
     padding-left: 2em;
+    /* height: 100%; */
     bottom: 0;
     right: 0;
 }

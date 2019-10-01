@@ -67,7 +67,7 @@ export class Navbar extends Component {
 
 
 <div className="col-5">
-    <div className="logo-section-languages fixed">
+    <div className="logo-section-languages">
         <div className="inline">
             <button onClick={(e) => this.changeLang(e)} id="ru">RUS</button>
             <h2>•</h2>
@@ -76,7 +76,7 @@ export class Navbar extends Component {
             <button onClick={(e) => this.changeLang(e)} id="et">EST</button>
             <h2>•</h2>
             <button onClick={(e) => this.changeLang(e)} id="fi">FIN</button>
-            </div>
+        </div>
         <div className="logo-line-right"> <p>RESTAURANT WANA WIIPURI • PIKK 33 • TALINN</p></div>
     </div>
 </div>

@@ -55,7 +55,7 @@ div .starters h2 {
     border:none;
     background: none;
     color: #E7503D;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: bold;
     /* position: absolute; */
 }
@@ -67,7 +67,7 @@ div .starters h2 {
 
 .inline h2 {
     color: #E7503D;
-    font-size: 5.3em;
+    font-size: 1.5rem;
     text-align: center;
     /* margin-right: 10px; */
     
