@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './Home.css'
+import './css/Home.css'
 import { withRouter } from 'react-router-dom'
 
 
@@ -68,18 +68,19 @@ export class Home extends Component {
                 <div className="row">
                 {/* LEFT SIDE OF MENU */}
                 
-                <div className="col starters">
+                <div className="col-5 starters">
                     <h2 className="header">{data.text.starters[lang]}</h2>
                     { this.makeStarters() }
                 </div>
 
                 {/* PAPA PITCTURE */}
-                <div className="col-4 papa">
+                <div className="col-2 papa">
                     <img src={ints} className="ints" alt="Professor" />
                 </div>
                 {/* RIGHT SIDE OF MENU */}
-                <div className="col">
-
+                <div className="col-5 starters">
+                <h2 className="header">TEST</h2>
+                    { this.makeStarters() }
                 </div>
 
                 </div>
@@ -90,4 +91,4 @@ export class Home extends Component {
     }
 }
 
-export default withRouter(Home)
+export default Home

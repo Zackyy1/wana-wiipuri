@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
-import "./Herku.css"
+import "./css/Herku.css"
 
 
 export class Herku extends Component {

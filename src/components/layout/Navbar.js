@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { withRouter } from 'react-router-dom'
-import './Navbar.css'
+import './css/Navbar.css'
 import Logo from "../../images/WW_LOGO_TRNSPRNT.png";
 import Cookies from 'universal-cookie'
 import Home from './Home'
@@ -33,10 +33,33 @@ export class Navbar extends Component {
     
     toHerku() {
         this.props.history.push("/herku")
+        this.hideDropdown();
     }
 
+    toChristmas() {
+        this.props.history.push("/christmas")
+        this.hideDropdown();
+
+    }
+    toGroup() {
+        this.props.history.push("/group")
+        this.hideDropdown();
+
+    }
+    toDrinks() {
+        this.props.history.push("/drinks")
+    }
     goHome() {
         this.props.history.push("/")
+    }
+    toGallery() {
+        this.props.history.push("/gallery")
+
+    }
+
+    hideDropdown() {
+        // document.findElementById("menu-dropdown").display = "none";
+        document.getElementById("menu-dropdown").display="none";
     }
 
     
@@ -52,8 +75,11 @@ export class Navbar extends Component {
                 <div className="row">
 
 <div className="col-5">
-    <div className="logo-section-contact ">
-        <h2 className="fixed" style={{fontVariant: "small-caps"}}>+372 6008109<br/>11.00-22.00<br/>info@wanawiipuri.ee</h2>
+    <div className="logo-section-contact">
+        <div className="fixed">
+        <h2 className="" style={{fontVariant: "small-caps"}}>+372 6008109<br/>11.00-22.00<br/>info@wanawiipuri.ee</h2>
+        </div>
+        
         <div className="logo-line-left"></div>
     </div>
 </div>
@@ -68,7 +94,7 @@ export class Navbar extends Component {
 
 <div className="col-5">
     <div className="logo-section-languages">
-        <div className="inline">
+        <div className="inline fixed">
             <button onClick={(e) => this.changeLang(e)} id="ru">RUS</button>
             <h2>•</h2>
             <button onClick={(e) => this.changeLang(e)} id="en">ENG</button>
@@ -88,19 +114,20 @@ export class Navbar extends Component {
 
     <div className="nav-panel">
             {/* Drinks, Special offers, Group menu, The Christmas feast */}
-            <button className="nav-button">{data.text.drinks[lang]}</button>
+            <button onClick={() => this.toDrinks()}  className="nav-button">{data.text.drinks[lang]}</button>
+
             <div className="dropdown">
                 <button className="nav-button dropdown-toggle" id="menuDropdownButton" data-toggle="dropdown-disabled" aria-haspopup="true" aria-expanded="true">{data.text.menu[lang]}</button>
                 <div className="dropdown-menu" aria-labelledby="menuDropdownButton" id="menu-dropdown">
                     <button onClick={() => this.toHerku()} className="nav-button-dropdown dropdown-item">{data.text.special[lang]}</button>
-                    <button className="nav-button-dropdown dropdown-item">{data.text.feast[lang]}</button>
-                    <button className="nav-button-dropdown dropdown-item">{data.text.group[lang]}</button>
+                    <button onClick={() => this.toChristmas()} className="nav-button-dropdown dropdown-item">{data.text.feast[lang]}</button>
+                    <button onClick={() => this.toGroup()} className="nav-button-dropdown dropdown-item">{data.text.group[lang]}</button>
 
 
                 </div>
             </div>
             
-            <button className="nav-button">{data.text.gallery[lang]}</button>
+            <button onClick={() => this.toGallery()} className="nav-button">{data.text.gallery[lang]}</button>
             {/* <button className="nav-button">{data.text.special[lang]}</button> */}
 
     </div>

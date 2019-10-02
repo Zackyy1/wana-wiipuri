@@ -1,0 +1,62 @@
+
+
+
+div .starters h2 {
+    font-variant: small-caps;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+
+.ints {
+
+    width: 100%;
+}
+
+.papa {
+    min-width: 33%;
+    margin-top: -2em;
+}
+
+.starters { 
+    text-align: center;
+    float: right;
+    font-family: 'Alike';
+    max-width: 33%;
+    /* float:right; */
+    /* margin: 0 auto; */
+}
+.starters h2 {
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-size: fit-width;
+   text-size-adjust: auto;
+}
+
+.starters p {
+    font-weight: bold;
+    
+    font-variant: small-caps;
+    font-size: 1.4em;
+}
+
+.container {
+    /* max-width: 85vw; */
+}
+
+.item-name {
+    /* text-decoration-line: underline; */
+    border-bottom: solid black 2px;
+    display: inline-block;
+    
+    
+}
+
+.header {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    border-bottom: solid black 3px;
+    height: 50px;
+}
+
