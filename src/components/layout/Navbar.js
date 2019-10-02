@@ -110,7 +110,7 @@ export class Navbar extends Component {
 
 </div>
 
-<a className="invisbutton" href="/" onClick={(e) => this.goHome(e)}><h1>Wana Wiipuri</h1></a>
+<a className="invisbutton" onClick={(e) => this.goHome(e)}><h1>Wana Wiipuri</h1></a>
 
     <div className="nav-panel">
             {/* Drinks, Special offers, Group menu, The Christmas feast */}

@@ -1,14 +1,15 @@
 h1 {
     color: #E7503D;
-    font-size: 9.5rem;
+    font-size: 9rem;
     font-stretch: extra-expanded;
     font-variant: small-caps;
     /* margin-top: -7rem; */
     font-weight: bold;
+    letter-spacing: 0.06em;
 }
 
 .logo-img {
-    max-width: 8em;
+    max-width: 7em;
    
     /* padding: 0 auto; */
     /* margin: 0 2em; */
@@ -18,14 +19,14 @@ h1 {
 }
 
 .logo {
-    padding-top: 2em;
+    padding-top: 1em;
 }
 
 .anno {
     /* margin-bottom: -50px; */
     font-family: 'Alike';
     font-variant: small-caps;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bold;
 }
 
@@ -66,11 +67,14 @@ h1 {
 
 .inline {
     display: flex;
+    position: absolute;
+    bottom: 0;
+    margin-top: 0px;
     text-align: center;
     justify-content: center;
     min-height: 114.8px;
-    /* margin-left: 30px;
-    margin-top: 20px; */
+    /* margin-top: 50px;; */
+    letter-spacing: 0.4em;
 }
 
 .inline button {
@@ -115,7 +119,7 @@ h1 {
     align-content: center;
     align-items: center;
     text-align: center;
-    height: 35vh;
+    height: 27vh;
 }
 
 .logo-section-contact {
@@ -123,7 +127,7 @@ h1 {
     /* position: absolute; */
     /* height: 100%; */
     width: 100%;
-    margin-top: 5em;
+    margin-top: 2em;
     /* padding-right: 2em; */
     height: fit-content;
     bottom: 0;
@@ -145,7 +149,7 @@ h1 {
     /* position: absolute; */
     /* height: 100%; */
     width: 100%;
-    margin-top: 5em;
+    margin-top: 2em;
     /* padding-left: 2em; */
     /* height: 100%; */
     /* bottom: 0; */
@@ -186,6 +190,7 @@ h1 {
 
 .invisbutton {
     border: none;
+    cursor: pointer;
     background: none;
     text-decoration:none !important;
 }
@@ -230,6 +235,15 @@ h1 {
     transition: background-color 0.2s;
 }
 
+.nav-button-dropdown:active ~ #menu-dropdown {
+    background-color: #E7503D;
+    color: rgb(233, 233, 233);
+    display: none;
+    /* transition: background-color 0.2s; */
+}
+
+
+
 .nav-button:focus {
     /* border: none; */
     outline: none;
@@ -246,6 +260,7 @@ h1 {
     display: block;
     transition: display 1s 1s;
 }
+
 
 #menu-dropdown:hover {
     display: block;
