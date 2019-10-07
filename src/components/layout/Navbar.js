@@ -6,7 +6,7 @@ import Logo from "../../images/WW_LOGO_TRNSPRNT.png";
 import Cookies from 'universal-cookie'
 import Home from './Home'
 import data from '../../languages';
-
+import $ from 'jquery'
 
 export class Navbar extends Component {
 
@@ -25,10 +25,12 @@ export class Navbar extends Component {
         console.log("User tried changing language to", e.target.id)
         const cookies = new Cookies();
         cookies.set("lang", e.target.id);
-        console.log(cookies.get("lang"))
-        const Parent = ReactDOM.render(<Home />, document.getElementById('home'));
-        this.forceUpdate();
-        Parent.forceUpdate();    
+        var newLang = cookies.get("lang");
+        // this.setState({lang: newLang})
+        document.location.reload();
+        // const Parent = ReactDOM.render(<Home />, document.getElementById('home'));
+        // this.forceUpdate();
+        // Parent.forceUpdate();    
     }
     
     toHerku() {
@@ -59,7 +61,10 @@ export class Navbar extends Component {
 
     hideDropdown() {
         // document.findElementById("menu-dropdown").display = "none";
-        document.getElementById("menu-dropdown").display="none";
+        // document.getElementById("menu-dropdown").display="none";
+        $("#menu-dropdown").hide();
+        $("#menu-dropdown").show(500);
+
     }
 
     
@@ -77,9 +82,8 @@ export class Navbar extends Component {
 <div className="col-5">
     <div className="logo-section-contact">
         <div className="fixed">
-        <h2 className="" style={{fontVariant: "small-caps"}}>+372 6008109<br/>11.00-22.00<br/>info@wanawiipuri.ee</h2>
+            <h2 className="" style={{fontVariant: "small-caps"}}>+372 6008109<br/>11.00-22.00<br/>info@wanawiipuri.ee</h2>
         </div>
-        
         <div className="logo-line-left"></div>
     </div>
 </div>
@@ -119,9 +123,9 @@ export class Navbar extends Component {
             <div className="dropdown">
                 <button className="nav-button dropdown-toggle" id="menuDropdownButton" data-toggle="dropdown-disabled" aria-haspopup="true" aria-expanded="true">{data.text.menu[lang]}</button>
                 <div className="dropdown-menu" aria-labelledby="menuDropdownButton" id="menu-dropdown">
-                    <button onClick={() => this.toHerku()} className="nav-button-dropdown dropdown-item">{data.text.special[lang]}</button>
-                    <button onClick={() => this.toChristmas()} className="nav-button-dropdown dropdown-item">{data.text.feast[lang]}</button>
-                    <button onClick={() => this.toGroup()} className="nav-button-dropdown dropdown-item">{data.text.group[lang]}</button>
+                    <button id="dropdown-item" onClick={() => this.toHerku()} className="nav-button-dropdown dropdown-item">{data.text.special[lang]}</button>
+                    <button id="dropdown-item" onClick={() => this.toChristmas()} className="nav-button-dropdown dropdown-item">{data.text.feast[lang]}</button>
+                    <button id="dropdown-item" onClick={() => this.toGroup()} className="nav-button-dropdown dropdown-item">{data.text.group[lang]}</button>
 
 
                 </div>

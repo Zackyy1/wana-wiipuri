@@ -1,7 +1,61 @@
 .herku-title {
     color: #E7503D;
-    font-size: 8em;
+    font-size: 4em;
     font-stretch: extra-expanded;
     font-variant: small-caps;
     font-weight: bold;
+}
+.chief-rec {
+    display: inline-block;
+    border-top: 3px solid #E7503D;
+    border-bottom: 3px solid #E7503D;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    height: 50px;
+    width: 20vw;
+    margin-bottom: 30px;
+    
+}
+.chief-rec h4 {
+    display: inline;
+    color: #E7503D;
+    font-size: 2em;
+    font-variant: small-caps;
+    overflow-wrap: normal;
+
+}
+
+.item-title {
+    /* display: inline; */
+    width: 70%;
+    margin: 0 auto;
+    color:  rgb(0, 0, 0);
+    font-variant: small-caps;
+    font-variant-caps: all-petite-caps;
+    font-weight: 900;
+    font-size: 2.5em;
+    border-bottom: 5px solid black;
+}
+
+.item-desc {
+    color:  rgb(0, 0, 0);
+    /* font-variant: small-caps; */
+    /* font-variant-caps: all-petite-caps; */
+    font-size: 1.5em;
+    font-weight: 400;
+    max-width: 30%;
+    margin: 0 auto;
+
+}
+
+.herku-wrap {
+    margin: 0 auto;
+    background-color:  #E7503D;
+    border-radius: 50px;
+    /* max-width: 700px; */
+    width: 50vw;
+    font-family: 'Alike';
+
 }

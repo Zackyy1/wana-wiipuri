@@ -9,6 +9,13 @@ const data = {
             et: "eelroad",
             fi: "alkuruoat"
         },
+        grill: {
+            key: "grill",
+            ru: "гриль и жареное",
+            en: "grill & pan",
+            et: "grill & pan", // заменить?
+            fi: "grillistä ja pannulta"
+        },
         drinks :{
             key: "drinks",
             ru: "Напитки",
@@ -139,10 +146,68 @@ const data = {
             ru: {name: "салака", desc: "маринованный лук / яйцо 62C°"},
             et: {name: "räimed", desc: "marineeritud sibul / muna 62C°"},
             fi: {name: "silakka", desc: "marinoitua sipulia / munaa 62C°"},
-            en: {name: "baltic herring", desc: "pickled onion, egg 62C°"},
+            en: {name: "baltic herring", desc: "pickled onion / egg 62C°"},
         }
-    }
+    },
 
+    grill: {
+        steak: {
+            price: "22,9",
+            key: "steak",
+            ru: {name: "говядина по-выборгски", desc: "вырезка на гриле / вок из овощей / картофель с розмарином / винный соус"},
+            et: {name: "wiipuri biifsteek", desc: "veise sisefilee / veinikaste / rosmariinikartul"},
+            fi: {name: "wiipurilainen pihvi", desc: "naudan sisäfilettä / viinikastiketta / rosmariiniperunoita"},
+            en: {name: "beefsteak wiipuri style", desc: "beef tenderloin / red wine sauce / rosemary potatoes"},
+        },
+        cheeks: {
+            price: "18,8",
+            key: "cheeks",
+            ru: {name: "тушёные говяжьи щёки", desc: "тушеные говяжьи щёки / картофельный гратен / вишнёво-винный соус / свежий салат"},
+            et: {name: "veisepõsk", desc: "hautatud veise põseliha / veini-kirsikaste / kartuligratään"}, // correct??
+            fi: {name: "naudan poski", desc: "haudutettua naudan poskilihaa / viini-kirsikka-kastiketta / perunagratiinia"}, // and here ??
+            en: {name: "beef cheek", desc: "braised beef cheek / wine and cherry sauce / potato gratin"},
+        },
+        duck: {
+            price: "16,9",
+            key: "duck",
+            ru: {name: "утка", desc: "утиная грудка на гриле / малиновый соус / пюре из морковки"},
+            et: {name: "part", desc: "grillitud pardirind / vaarikakaste / porgandipüree"},
+            fi: {name: "ankka", desc: "grillatua ankanrintaa / vadelmakastiketta / porkkanasosetta"}, 
+            en: {name: "duck", desc: "grilled duck breast / raspberry sauce / potato gratin"},
+        },
+        // newone: {
+        //     price: "",
+        //     key: "",
+        //     ru: {name: "", desc: ""},
+        //     et: {name: "", desc: ""},
+        //     fi: {name: "", desc: ""}, 
+        //     en: {name: "", desc: ""},
+        // },
+        chicken: {
+            price: "14,9",
+            key: "chicken",
+            ru: {name: "курица", desc: "куриное филе с косточкой / сырно-шпинатный соус / картофельный гратен"},
+            et: {name: "kana", desc: "kanafilee supreme / juustu-spinatikaste / kartuligratään"},
+            fi: {name: "kana", desc: "supreme kananrintaa / juusto-pinaattikastiketta / perunagratiinia"}, 
+            en: {name: "chicken", desc: "chicken fillet supreme / cheese and spinach sauce / potato gratin"},
+        },
+        pork: {
+            price: "15,9",
+            key: "pork",
+            ru: {name: "свиная мини-рулька", desc: "тушёная мини-рулька / яблочно-горчичный соус / картофельный гратен"},
+            et: {name: "sea minikoot", desc: "hautatud seakoot / õuna-sinepikaste / kartuligratään"},
+            fi: {name: "porsaanpotkaa", desc: "haudutettua porsanpotkaa / omena-sinappikastiketta / perunagratiinia"}, 
+            en: {name: "pork", desc: "braised piglet knuckles / apple and mustard sauce / potato gratin"},
+        },
+        boar: {
+            price: "18,6",
+            key: "boar",
+            ru: {name: "кабан", desc: "кабан тушёный в тёмном пиве / картофель с розмарином / овощи / свежий салат"},
+            et: {name: "metssiga", desc: "tumedas õlles hautatud metssealiha / rosmariinikartul"},
+            fi: {name: "villisika", desc: "tummassa oluessa haudutettua villisikaa / rosmariiniperunoita"}, 
+            en: {name: "wild boar", desc: "wild boar meat braised in dark beer / rosemary potatoes"},
+        },
+    }
    
 
 }

@@ -1,6 +1,7 @@
-.bg {
+.footer-bg {
+    
     height: 150px;
-    width: 100vw;
+    width: 100%;
     margin-top: 75px;
     background-color: #E7503D;
 }

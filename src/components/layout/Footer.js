@@ -3,7 +3,7 @@ import './css/Footer.css'
 export class Footer extends Component {
     render() {
         return (
-            <div className="bg">
+            <div className="footer-bg">
                 {/* 
 
                     Footer will be used for TripAdvisor / FB page and other links

@@ -45,10 +45,32 @@ export class Home extends Component {
                     <p className="item-desc">{item[lang].desc}</p>
                 </div>)
        )
-        
+    }
 
+    makeGrill() {
+
+        var len = Object.keys(data.grill).length
+        console.log("Data.grill has", len, "keys")
+
+        var grill = [];
+        for (var i = 0; i < len; i++) {
+            grill.push(data.grill[Object.keys(data.grill)[i]])
+        }
+        console.log(grill)
+
+        // var lang = this.state.lang;
+        const cookies = new Cookies();
+        var lang = cookies.get("lang") || "en"
+        // this.setState({lang})
         
-       
+       return grill.map(item => (
+            
+                <div className="menu-entry" key={item.key}>
+                    <h2 className="item-name">{item[lang].name} {item.price}</h2>
+                    {/* <h2 className="item-price">{item.price}</h2> */}
+                    <p className="item-desc">{item[lang].desc}</p>
+                </div>)
+       )
     }
 
 
@@ -79,8 +101,8 @@ export class Home extends Component {
                 </div>
                 {/* RIGHT SIDE OF MENU */}
                 <div className="col-5 starters">
-                <h2 className="header">TEST</h2>
-                    { this.makeStarters() }
+                <h2 className="header">{data.text.grill[lang]}</h2>
+                    { this.makeGrill() }
                 </div>
 
                 </div>
