@@ -1,5 +1,4 @@
 
- {/* Drinks, Special offers, Group menu, The Christmas feast */}
 const data = {
     text: {
         starters: {
@@ -15,6 +14,20 @@ const data = {
             en: "grill & pan",
             et: "grill & pan", // заменить?
             fi: "grillistä ja pannulta"
+        },
+        desert: {
+            key: "desert",
+            ru: "десерт",
+            en: "desserts",
+            et: "dessert",
+            fi: "jälkiruoat"
+        },
+        soups: {
+            key: "soups",
+            ru: "супы",
+            en: "soups",
+            et: "supid",
+            fi: "keitot"
         },
         drinks :{
             key: "drinks",
@@ -57,7 +70,22 @@ const data = {
             en: "Gallery",
             et: "Galerii",
             fi: "Galleria"
-        }
+        },
+        chiefRec: {
+            key: "chief",
+            ru: "от шеф-повара",
+            en: "chief recommends",
+            et: "peakokk soovitab",
+            fi: "pääkokki suosittelee"
+        },
+        marskinpickles: {
+            price: "5,0",
+            key: "pickles",
+            ru: {name: "солёные огурчики Вальсберга", desc: "малосольные огурцы / черемша / сметана / медово-горчичный соус / рюмка водки"},
+            et: {name: "walsberg'i soolakurgid", desc: "marineeritud karulauk / hapukoor / mee-sinepikaste / klaas viina"},
+            fi: {name: "walsberg'in suolakurkku", desc: "karhunlaukkaa / smetanaa / hunaja-sinappikastiketta / marskin ryypy"},
+            en: {name: "walsberg's salted pickles", desc: "ramsons / sour cream / honey-mustard sauce / marshall's vodka shot"},
+        },
     },
     starters: {
         pickles: {
@@ -68,6 +96,7 @@ const data = {
             fi: {name: "walsberg'in suolakurkku", desc: "karhunlaukkaa / smetanaa / hunaja-sinappikastiketta"},
             en: {name: "walsberg's salted pickles", desc: "ramsons / sour cream / honey-mustard sauce"},
         },
+        
         vorschmack: {
             price: "8,9",
             key: "vorschmack",
@@ -175,14 +204,6 @@ const data = {
             fi: {name: "ankka", desc: "grillatua ankanrintaa / vadelmakastiketta / porkkanasosetta"}, 
             en: {name: "duck", desc: "grilled duck breast / raspberry sauce / potato gratin"},
         },
-        // newone: {
-        //     price: "",
-        //     key: "",
-        //     ru: {name: "", desc: ""},
-        //     et: {name: "", desc: ""},
-        //     fi: {name: "", desc: ""}, 
-        //     en: {name: "", desc: ""},
-        // },
         chicken: {
             price: "14,9",
             key: "chicken",
@@ -206,6 +227,90 @@ const data = {
             et: {name: "metssiga", desc: "tumedas õlles hautatud metssealiha / rosmariinikartul"},
             fi: {name: "villisika", desc: "tummassa oluessa haudutettua villisikaa / rosmariiniperunoita"}, 
             en: {name: "wild boar", desc: "wild boar meat braised in dark beer / rosemary potatoes"},
+        },
+        lamb: {
+            price: "17,9",
+            key: "lamb",
+            ru: {name: "баранина", desc: "филе баранины на гриле / винный соус с мятой / ризотто с белыми грибами"},
+            et: {name: "lammas", desc: "grillitud lambafilee / veini-mündikaste / puravikurisoto"},
+            fi: {name: "lammas", desc: "grillattua lampaanfiletta / viini-minttukastiketta / tattirisottoa"}, 
+            en: {name: "lamb", desc: "grillet lamb fillet / red wine and mint sauce / porcini risotto"},
+        },
+        hotpan: {
+            price: "12,4",
+            key: "hotpan",
+            ru: {name: "горячая сковорода", desc: "запечённое мясо / картофель / лук / яйца / майонез"},
+            et: {name: "kuum pann", desc: "ahjuliha / kartul / sibul / muna / majonees"},
+            fi: {name: "kuuma pannu", desc: "lihaa / perunaa / sipulia / munaa / majoneesia"}, 
+            en: {name: "hot pan", desc: "meat / potatoes / onion / egg / mayonnaise"},
+        },
+        perch: {
+            price: "13,7",
+            key: "perch",
+            ru: {name: "окунь", desc: "филе окуня на гриле / ризотто с белыми грибами / масло с каперсами"},
+            et: {name: "ahven", desc: "grillitud ahvenafilee / kapparivõi / puravikurisoto"},
+            fi: {name: "ahven", desc: "grillattua ahventa / kaprisvoita / tattirisottoa"}, 
+            en: {name: "perch", desc: "grilled perchfillet / caper butter sauce / porcini risotto"},
+        },
+        salmon: {
+            price: "16,7",
+            key: "salmon",
+            ru: {name: "лосось", desc: "филе лосося на гриле / варёный картофель / сливочный соус с лимоном"},
+            et: {name: "lõhe", desc: "grillitud lõhefilee / sidruni-võikaste / keedukartul"},
+            fi: {name: "lohi", desc: "grillattua lohta / kerma-sitruunakastiketta / keitettyjä perunoita"}, 
+            en: {name: "salmon", desc: "grilled salmon fillet / creamy lemon sauce / boiled potatoes"},
+        },
+    },
+    soups: {
+        borsch: {
+            price: "6,4",
+            key: "borsch",
+            ru: {name: "борщ", desc: "говяжий язык / сметана"},
+            et: {name: "borš", desc: "veisekeel / hapukoor"},
+            fi: {name: "klassinen borssikeitto", desc: "naudankieltä / smetanaa"}, 
+            en: {name: "borsch", desc: "veal tongue / sour cream"},
+        },
+        weeksoup: {
+            price: "5,9",
+            key: "weeksoup",
+            ru: {name: "суп недели", desc: "информация у официанта"},
+            et: {name: "nädalasupp", desc: "küsi teenindajatelt"},
+            fi: {name: "viinon keitto", desc: "kysy tarjoilijalta"}, 
+            en: {name: "soup of the week", desc: "ask your waiter"},
+        },
+    },
+    desserts: {
+        honeycake: {
+            price: "5,9",
+            key: "honeycake",
+            ru: {name: "дуэт из медовика", desc: "медовик классический / медовик с какао / ягодный соус / взбитая сметана"},
+            et: {name: "meekoogi duo", desc: "toorjuustuvaht / marjakaste"},
+            fi: {name: "hunajakakku duo", desc: "tuorejuustovaahtoa / marjakastiketta"}, 
+            en: {name: "honey cake duo", desc: "cream cheese mousse / berry sauce"},
+        },
+        pannacotta: {
+            price: "5,9",
+            key: "pannacotta",
+            ru: {name: "панна котта", desc: "крем из йогурта / клюквенный соус"},
+            et: {name: "panna cotta", desc: "jogurtikreem / jõhvikakaste"},
+            fi: {name: "panna cotta", desc: "jogurttikermaa / karpalokastiketta"}, 
+            en: {name: "panna cotta", desc: "yoghurt cream / cranberry sauce"},
+        },
+        chocolatecake: {
+            price: "5,9",
+            key: "chococake",
+            ru: {name: "шоколадный пирог", desc: "желе из облепихи / малиновый соус"},
+            et: {name: "šokolaadikook", desc: "astelpajuželee / vaarikakaste"},
+            fi: {name: "suklaakakku", desc: "tyrnimarjahyytelä / vadelmakastiketta"}, 
+            en: {name: "chocolate cake", desc: "sea buckthorn jelly / raspberry sauce"},
+        },
+        icecream: {
+            price: "4,8",
+            key: "icecream",
+            ru: {name: "мороженое", desc: "ванильное / шоколадное / малиновое / ягодный соус"},
+            et: {name: "jäätis", desc: "jäätisevalik / marjakaste"},
+            fi: {name: "jäätelö", desc: "jäätelövalikoima / marjakastiketta"}, 
+            en: {name: "ice cream", desc: "ice cream selection / berry sauce"},
         },
     }
    

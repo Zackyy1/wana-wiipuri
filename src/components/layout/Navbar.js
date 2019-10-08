@@ -1,19 +1,15 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
 import { withRouter } from 'react-router-dom'
 import './css/Navbar.css'
 import Logo from "../../images/WW_LOGO_TRNSPRNT.png";
 import Cookies from 'universal-cookie'
-import Home from './Home'
 import data from '../../languages';
 import $ from 'jquery'
 
 export class Navbar extends Component {
-
         state = {
             lang: "en",
         }
-
 
     componentDidMount() {
         const cookies = new Cookies();
@@ -25,12 +21,7 @@ export class Navbar extends Component {
         console.log("User tried changing language to", e.target.id)
         const cookies = new Cookies();
         cookies.set("lang", e.target.id);
-        var newLang = cookies.get("lang");
-        // this.setState({lang: newLang})
         document.location.reload();
-        // const Parent = ReactDOM.render(<Home />, document.getElementById('home'));
-        // this.forceUpdate();
-        // Parent.forceUpdate();    
     }
     
     toHerku() {
@@ -60,11 +51,8 @@ export class Navbar extends Component {
     }
 
     hideDropdown() {
-        // document.findElementById("menu-dropdown").display = "none";
-        // document.getElementById("menu-dropdown").display="none";
         $("#menu-dropdown").hide();
         $("#menu-dropdown").show(500);
-
     }
 
     
@@ -117,7 +105,6 @@ export class Navbar extends Component {
 <a className="invisbutton" onClick={(e) => this.goHome(e)}><h1>Wana Wiipuri</h1></a>
 
     <div className="nav-panel">
-            {/* Drinks, Special offers, Group menu, The Christmas feast */}
             <button onClick={() => this.toDrinks()}  className="nav-button">{data.text.drinks[lang]}</button>
 
             <div className="dropdown">

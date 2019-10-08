@@ -1,11 +1,11 @@
 
 
-
+/* 
 div .starters h2 {
     font-variant: small-caps;
     font-size: 1.5em;
     font-weight: bold;
-}
+} */
 
 
 
@@ -15,49 +15,46 @@ div .starters h2 {
 }
 
 .papa {
-    min-width: 33%;
-    margin-top: -2em;
+    min-width: 100%;
+    /* margin-top: -2em; */
 }
 
-.starters { 
+.menu-col { 
     text-align: center;
-    float: right;
+    /* float: right; */
     font-family: 'Alike';
-    max-width: 33%;
+    max-width: 100%;
     /* float:right; */
     /* margin: 0 auto; */
 }
-.starters h2 {
+
+.menu-entry h2 {
     font-weight: bolder;
     font-variant: small-caps;
-    font-size: fit-width;
-   text-size-adjust: auto;
-}
-
-.starters p {
-    font-weight: bold;
-    
-    font-variant: small-caps;
-    font-size: 1.4em;
-}
-
-.container {
-    /* max-width: 85vw; */
-}
-
-.item-name {
-    /* text-decoration-line: underline; */
-    border-bottom: solid black 2px;
+    /* text-size-adjust: auto; */
+    font-size: 2em;
+    margin-top: 15px;
+    border-bottom: solid #E7503D 2px;
     display: inline-block;
-    
-    
+
+}
+
+.menu-entry p {
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1.5em;
 }
 
 .header {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-size: 2.5em;
     border-bottom: solid black 3px;
     height: 50px;
+    font-variant: small-caps;
+}
+
+.desserts {
+    margin-top: 50px;
 }
 
 #home {
