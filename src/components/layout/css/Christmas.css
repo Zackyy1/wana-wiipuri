@@ -14,8 +14,11 @@
         font-weight: bold;
         border-bottom: 2px solid rgb(31, 31, 31);
         height: fit-content;
+        min-height: 70px;
         position: relative;
-        margin: 0 auto;
+        margin: 15px auto;
+        font-family: 'Alike';
+
 }
 
 .christmas-wrap {
@@ -24,23 +27,43 @@
         border-left: 3px solid black;
         border-right: 2px solid rgb(165, 165, 165);
         margin-top: 15px;
+        /* margin-left: 10px;
+        margin-right: 10px;
+        max-width: 15vw; */
+
+}
+
+.christmas-outer-wrap {
+        margin: 0 auto;
+
 }
 
 .christmas-wrap p {
         color: rgb(31, 31, 31);
-        font-size: 1.4em;
-        font-variant: small-caps;
-        font-weight: bold;
+        font-size: 1.5em;
+        /* font-variant: small-caps; */
+        font-weight: 500;
         margin-top: 5px;
         margin-bottom: 10px;
+        font-family: 'Alike';
 
         border-bottom: 1px dotted rgb(31, 31, 31);
 }
 
 .christmas-summary {
-        width: 33vw;
+        width: 70vw;
         margin: 15px auto;
         background-color: #E7503D;
         border-radius: 90px;
         padding: 10px 10px;
+        font-family: 'Alike';
+
+}
+
+.christmas-summary h3 {
+        margin: 15px auto;
+        display: inline;
+        font-weight: 600;
+        border-bottom: 2px dotted rgb(31, 31, 31);
+
 }

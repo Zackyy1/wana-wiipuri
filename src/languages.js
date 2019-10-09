@@ -91,24 +91,28 @@ const data = {
             ru: "На закуску гостей ожидает:",
             fi: "Alkupalaksi vierailijoita on pöydässä odotamassa:",
             en: "As guests arrive, the table will be covered with various appetizers:",
+            et: "Eelroogadest on laual külalisi ootamas:",
         },
         christmas_header_2: {
             key: "christmasheader2",
             ru: "На горячее на стол вынесут:",
             fi: "Pääruoaksi pöydälle tuodaan:",
             en: "After that, the main courses will be served:",
+            et: "Pearoogadena tuuakse lauale:"
         },
         christmas_header_3: {
             key: "christmasheader3",
             ru: "В завершении трапезы предлагаем сладкое:",
             fi: "Hauskan illallisen lopuksi tarjoillaan jälkiruoka:",
             en: "The merry feast will come to an end with dessert:",
+            et: "Lõbusa söömaaja lõpetuseks pakume magusrooga:"
         },
         christmas_summary: {
             key: "christmassummary",
             ru: "Предлагаем компании начиная с 8 человек. Цена на одного человека 34.90",
             fi: "Minimi henkilömäärä 8 henkeä. Illallisen hinta 34.90 euroa (ei sisältää juomia)",
             en: "Feast starting from 8 guests. Price per guest 34.90",
+            et: "Pakume seltskonnale alates 8 inimesest. Hind külalise kohta 34.90. Söömaaja hind ei sisalda jooke"
         },
         christmas_starter: {
             key: "christmasstarter",
@@ -127,6 +131,11 @@ const data = {
             'Tender roast beef, delicate meat pâté and slices of roasted lamb',
             'Golden brown salmon coulibiac with rice and cream cheese stuffing',
             'Beetroot fritters with yoghurt sauce'],
+            et: ['Soolakurgid mee-sinepikastme ja hapukoorega',
+            'Kalavalikus soolasiig, marineeritud heeringas ja kergelt soolatud lõhefilee',
+            'Lihavalikus õrnroosa rostbiif, küpsetatud lambalihalõigud ja hõrk lihapatee',
+            'Kuldseks küpsetatud lõhekulebjaaka riisi- ja toorjuustutäidisega',
+            'Peedikotletid jogurtikastmega'],
         },
         christmas_main: {
             key: "christmasmain",
@@ -142,6 +151,10 @@ const data = {
             'Cod fillet breaded with parmesan and capers accompanied by creamy lemon sauce',
             'Oven baked cumin potatoes',
             'Red cabbage braised with honey'],
+            et: ['Sinepikastmes hautatud sea minikoot',
+            'Parmesani-kapparipaneeringus tursafilee sidruni-koorekastmega',
+            'Ahjuküpsed köömnekartulid',
+            'Meega hautatud punakapsas'],
         },
         christmas_end: {
             key: "christmasend",
@@ -154,6 +167,9 @@ const data = {
             en: ['Oven baked apple with lemon parfait',
             'Tea/coffee',
             'Water with thyme and cranberries'],
+            et: ['Meega küpsetatud ahjuõun sidruniparfeega',
+            'Tee/kohv',
+            'Jäävesi tüümiani- ja jõhvikatega'],
         },
         
     },
