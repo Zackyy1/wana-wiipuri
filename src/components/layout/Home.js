@@ -91,13 +91,13 @@ export class Home extends Component {
                 <div className="row">
                 {/* LEFT SIDE OF MENU */}
                 
-                <div className="col-4 starters menu-col">
+                <div className="col-12 col-xl-4 col-lg-12 col-sm-12 col-md-12 starters menu-col">
                     <h2 className="header">{data.text.starters[lang]}</h2>
                     { this.makeStarters() }
                 </div>
 
                 {/* PAPA PITCTURE */}
-                <div className="col-4">
+                <div className="col-12 col-xl-4 col-lg-12 col-sm-12 col-md-12">
                     <div className="papa"><img src={ints} className="ints" alt="Professor" /></div>
                     <div className="soups menu-col">
                     <h2 className="header">{data.text.soups[lang]}</h2>
@@ -111,7 +111,7 @@ export class Home extends Component {
 
                 </div>
                 {/* RIGHT SIDE OF MENU */}
-                <div className="col-4 grill menu-col">
+                <div className="col-12 col-xl-4 col-lg-12 col-md-12 col-sm-12 grill menu-col">
                 <h2 className="header">{data.text.grill[lang]}</h2>
                     { this.makeGrill() }
                 </div>

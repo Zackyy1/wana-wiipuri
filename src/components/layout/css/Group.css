@@ -1,8 +1,66 @@
 .group-title {
     color: #E7503D;
-    font-size: 8em;
+    font-size: 3em;
     font-stretch: extra-expanded;
     font-variant: small-caps;
     font-weight: bold;
 
+}
+
+.group-wrapper {
+    background-color: #E7503D;
+    margin: 30px auto;
+    border: 2px solid rgb(51, 51, 51);
+    border-radius: 30px;
+}
+
+.group-wrapper p {
+    font-size: 1.3em;
+    padding-bottom: 15px;
+    /* border: 0.5px solid; */
+    border-bottom: 1px dotted;
+    border-radius: 10px;
+    border-color: rgb(31, 31, 31);
+
+}
+
+.group-wrapper h2 {
+    /* border-bottom: 2px solid; */
+    /* padding-bottom: 30px; */
+    margin-top: 15px;
+}
+
+.group-wrapper h4 {
+    /* border-bottom: 2px solid; */
+ 
+    
+
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.group-divider {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(31,31,31);
+    margin-bottom: 15px;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+
+.group-divider-2 {
+    width: 80%;
+
+    height: 1px;
+    background-color: rgb(31,31,31);
+   
+    margin: 15px auto 15px auto;
+
+}
+
+.gov-h1 {
+    margin-bottom: 25px;
+    margin-top: 10px;
 }

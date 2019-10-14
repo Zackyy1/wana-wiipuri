@@ -63,17 +63,18 @@ export class Navbar extends Component {
         var lang = cookies.get("lang") || "en";
         return (
             <div>
-            <div className='logo-section container'>
+            <div className='logo-section'>
 
                 <div className="row">
 
 <div className="col-5">
-    <div className="logo-section-contact">
-        <div className="fixed">
-            <h2 className="" style={{fontVariant: "small-caps"}}>+372 6008109<br/>11.00-22.00<br/>info@wanawiipuri.ee</h2>
-        </div>
-        <div className="logo-line-left"></div>
+    <div className="logo-section-contact fixed">
+        
+            <h2 className="" style={{fontVariant: "small-caps"}}>+372 6008109<br/>11.00-22.00<br/><a id="mail-link" href="mailto:info@wanawiipuri.ee">info@wanawiipuri.ee</a></h2>
+        
     </div>
+    <div className="logo-line-left"></div>
+
 </div>
 
 <div className="col-2">
@@ -85,24 +86,25 @@ export class Navbar extends Component {
 
 
 <div className="col-5">
-    <div className="logo-section-languages">
-        <div className="inline fixed">
-            <button onClick={(e) => this.changeLang(e)} id="ru">RUS</button>
-            <h2>•</h2>
-            <button onClick={(e) => this.changeLang(e)} id="en">ENG</button>
-            <h2>•</h2>
-            <button onClick={(e) => this.changeLang(e)} id="et">EST</button>
-            <h2>•</h2>
-            <button onClick={(e) => this.changeLang(e)} id="fi">FIN</button>
-        </div>
-        <div className="logo-line-right"> <p>RESTAURANT WANA WIIPURI • PIKK 33 • TALINN</p></div>
+    <div className="logo-section-languages inline fixed">
+            <div className="inline">
+                <button onClick={(e) => this.changeLang(e)} id="ru">RUS</button>
+                <h2>•</h2>
+                <button onClick={(e) => this.changeLang(e)} id="en">ENG</button>
+                <h2>•</h2>
+                <button onClick={(e) => this.changeLang(e)} id="et">EST</button>
+                <h2>•</h2>
+                <button onClick={(e) => this.changeLang(e)} id="fi">FIN</button>
+            </div>
     </div>
+    <div className="logo-line-right"> <p>RESTAURANT WANA WIIPURI • PIKK 33 • TALINN</p></div>
+
 </div>
 </div>
 
 </div>
 
-<a className="invisbutton" onClick={(e) => this.goHome(e)}><h1>Wana Wiipuri</h1></a>
+<a className="invisbutton" onClick={(e) => this.goHome(e)}><h1>wana wiipuri</h1></a>
 
     <div className="nav-panel">
             <button onClick={() => this.toDrinks()}  className="nav-button">{data.text.drinks[lang]}</button>
