@@ -6,3 +6,62 @@
     font-weight: bold;
 
 }
+
+.drink-title {
+    color: rgb(rgb(31, 31, 31));
+    font-size: 3em;
+    font-variant: small-caps;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+}
+
+.drinks-menu {
+    padding-top: 10px;
+}
+
+.divider {
+    width: 100%;
+    height: 7px;
+    margin-top: 25px;
+}
+
+.divider.black {
+    background-color: black;
+}
+
+.soft-drinks {
+    border-right: 2px solid black;
+}
+
+.divider.thin {
+    height: 2px;
+}
+
+.drink-entry {
+    display: flex;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    /* vertical-align: auto; */
+}
+
+.drink-entry-name {
+    width: auto;
+    text-align: left;;
+    /* flex: 0; */
+
+}
+
+.drink-entry-units {
+    /* min-width: 20%; */
+}
+
+.drink-entry-price {
+        /* display: inline-block; */
+    /* vertical-align: baseline; */
+    /* display: inline; */
+    float: right;
+    text-align: right;
+    
+}

@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <div className="" id="main">
+        <div className="container" id="main">
         <Navbar />
        <Switch>
          <Route exact path="/" component={Home}></Route>
