@@ -3,8 +3,49 @@ const data = {
     text: {
         drink_info: {
             blank: '',
-            size: 'size',
-            price: 'price'
+            tequila: {
+                en: 'tequila',
+                ru: 'текила',
+                fi: 'tequila',
+                et: 'tequila',
+            },
+            gin: {
+                en: 'gin',
+                ru: 'джин',
+                fi: 'gin',
+                et: 'džinn',
+            },
+
+            size: {
+                en: 'size',
+                ru: 'размер',
+                fi: 'koko',
+                et: 'maht',
+            },
+            price: {
+                en: 'price',
+                ru: 'цена',
+                fi: 'hinta',
+                et: 'hind',
+            },
+            beer: {
+                en: '★beer★',
+                ru: '★пиво★',
+                fi: '★olut★',
+                et: '★õlu★',
+            },
+            cider: {
+                en: 'cider and long drink',
+                ru: 'сидры',
+                fi: 'siideri',
+                et: 'siider',
+            },
+            soft_drinks: {
+                en: 'soft drinks',
+                ru: 'холодные напитки',
+                fi: 'virvoitusjuomat',
+                et: 'karastusjoogid',
+            },
         },
         starters: {
             key: "starters",
@@ -589,7 +630,7 @@ const data = {
             bouche: {
                 key: 'bouche',
                 price: '14,5',
-                name: 'Cidre Bouche Brut de Nromandie',
+                name: 'Cidre Bouche Brut de Normandie',
                 amount: '0,75',
                 unit: 'l',
             },

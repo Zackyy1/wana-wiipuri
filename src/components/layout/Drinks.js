@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import './css/Drinks.css'
 import Cookies from 'universal-cookie';
 import data from '../../languages';
+import ints from '../../images/WW_indrek.png';
+
 export class Drinks extends Component {
 
     /**
@@ -27,15 +29,16 @@ export class Drinks extends Component {
         console.log(array);
         return array.map(drinkEntry => {
             return (
-                <div key={drinkEntry['key']} className="drink-entry">
-                    { drinkEntry['ru'] ? (<p className="drink-entry-name">{drinkEntry[lang]}</p>) : 
-                    (<p className="drink-entry-name">{drinkEntry['name']}</p>) }
-                    { drinkEntry['unit'] ? <p className="drink-entry-units">
-                    {drinkEntry['amount']+drinkEntry['unit']}
-                    </p> : null}
-                    <p className="drink-entry-price">{drinkEntry['price']}</p>
+                <tr key={drinkEntry['key']} className="drink-entry">
+                    { drinkEntry['ru'] ? 
+                    (<td className="drink-entry-name">{drinkEntry[lang]}</td>) : 
+                    (<td className="drink-entry-name">{drinkEntry['name']}</td>) }
+                    { drinkEntry['unit'] ? 
+                    <td className="drink-entry-units">{drinkEntry['amount']+drinkEntry['unit']} </td> :
+                    null}
+                    <td className="drink-entry-price">{drinkEntry['price']}</td>
                     {/* <p className="drink-entry-name">{drinkEntry[lang]}</p> */}
-                </div>
+                </tr>
             )
         })
     }
@@ -47,25 +50,112 @@ export class Drinks extends Component {
         return (
             <div>
                 <div className="divider black"></div>
-                <div className="row drinks-menu">
+                <div className="row drinks-menu bottom-border">
                     <div className="col-4 soft-drinks">
-                        <h2 className="drink-title" >soft drinks</h2>
-                        <span cclassName="drink-entry" style={{'display':'flex'}}>
-                            <p className="drink-entry-name">{data.text.drink_info['blank']}</p>
-                            <p className="drink-entry-unit">{data.text.drink_info['size']}</p>
-                            <p className="drink-entry-price">{data.text.drink_info['price']}</p>
-                        </span>
-                        <div className="divider thin black"></div>
-                        {/* Drinks go here */}
-                        { this.makeDrinks('drinks', 'soft_drinks', lang) }
-                        { this.makeDrinks('drinks', 'hot', lang) }
+                        {/* TITLE */}
+                        <h2 className="drink-title" >{ data.text.drink_info.soft_drinks[lang] }</h2>
+                        <table>
+                            <tbody>
+                            <tr className="drink-entry"> 
+                                {/* HELPERS */}
+                                <td className="drink-entry-name helper">{data.text.drink_info['blank']}</td>
+                                <td className="drink-entry-unit helper">{data.text.drink_info.size[lang]}</td>
+                                <td className="drink-entry-price helper">{data.text.drink_info.price[lang]}</td>
+                            </tr>
+                            {/* TITLE to DRINK LIST DIVIDER */}
+                            <tr>
+                                <td className="divider thin black"></td>
+                            </tr>
+                            {/*  DRINK LIST */}
+                            { this.makeDrinks('drinks', 'soft_drinks', lang) }
+                            {/* { this.makeDrinks('drinks', 'hot', lang) } */}
+                            </tbody>
+                        </table>
+                        {/* Tequila */}
+                        <h2 className="drink-title sub-title" >{ data.text.drink_info.tequila[lang] }</h2>
+                        <table>
+                            <tbody>
+                            <tr className="drink-entry"> 
+                                {/* HELPERS */}
+                                <td className="drink-entry-name helper">{data.text.drink_info['blank']}</td>
+                                <td className="drink-entry-unit helper">{data.text.drink_info.size[lang]}</td>
+                                <td className="drink-entry-price helper">{data.text.drink_info.price[lang]}</td>
+                            </tr>
+                            {/* TITLE to DRINK LIST DIVIDER */}
+                            <tr>
+                                <td className="divider thin black"></td>
+                            </tr>
+                            {/*  DRINK LIST */}
+                            { this.makeDrinks('drinks', 'tequila', lang) }
+                            {/* { this.makeDrinks('drinks', 'hot', lang) } */}
+                            </tbody>
+                        </table>
+                        {/* GIN */}
+                        
+                    </div>
+                    <div className="col-4">
 
+                        <div className="papa"><img src={ints} className="ints" alt="Professor" /></div>
+                        <div className="divider thin black"></div>
+                        <h2 className="drink-title sub-title" >{ data.text.drink_info.gin[lang] }</h2>
+                        <table>
+                            <tbody>
+                            <tr className="drink-entry"> 
+                                {/* HELPERS */}
+                                <td className="drink-entry-name helper">{data.text.drink_info['blank']}</td>
+                                <td className="drink-entry-unit helper">{data.text.drink_info.size[lang]}</td>
+                                <td className="drink-entry-price helper">{data.text.drink_info.price[lang]}</td>
+                            </tr>
+                            {/* TITLE to DRINK LIST DIVIDER */}
+                            <tr>
+                                <td className="divider thin black"></td>
+                            </tr>
+                            {/*  DRINK LIST */}
+                            { this.makeDrinks('drinks', 'gin', lang) }
+                            {/* { this.makeDrinks('drinks', 'hot', lang) } */}
+                            </tbody>
+                        </table>
                     </div>
-                    <div className="col-4">
-                    <h2 className="drink-title" >beer</h2>
-                    </div>
-                    <div className="col-4">
-                    <h2 className="drink-title" >cider</h2>
+
+
+                    <div className="col-4 beers">
+                    <h2 className="drink-title" >{ data.text.drink_info.beer[lang] }</h2>
+                        <table>
+                            <tbody>
+                            <tr className="drink-entry"> 
+                                {/* HELPERS */}
+                                <td className="drink-entry-name helper">{data.text.drink_info['blank']}</td>
+                                <td className="drink-entry-unit helper">{data.text.drink_info.size[lang]}</td>
+                                <td className="drink-entry-price helper">{data.text.drink_info.price[lang]}</td>
+                            </tr>
+                            {/* TITLE to DRINK LIST DIVIDER */}
+                            <tr>
+                                <td className="divider thin black"></td>
+                            </tr>
+                            {/*  DRINK LIST */}
+                            { this.makeDrinks('drinks', 'beer', lang) }
+                            {/* { this.makeDrinks('drinks', 'hot', lang) } */}
+                            </tbody>
+                        </table>
+                        {/*  CIDERS */}
+                        <h2 className="drink-title" >{ data.text.drink_info.cider[lang] }</h2>
+                        <table>
+                            <tbody>
+                            <tr className="drink-entry"> 
+                                {/* HELPERS */}
+                                <td className="drink-entry-name helper">{data.text.drink_info['blank']}</td>
+                                <td className="drink-entry-unit helper">{data.text.drink_info.size[lang]}</td>
+                                <td className="drink-entry-price helper">{data.text.drink_info.price[lang]}</td>
+                            </tr>
+                            {/* TITLE to DRINK LIST DIVIDER */}
+                            <tr>
+                                <td className="divider thin black"></td>
+                            </tr>
+                            {/*  DRINK LIST */}
+                            { this.makeDrinks('drinks', 'cider', lang) }
+                            {/* { this.makeDrinks('drinks', 'hot', lang) } */}
+                            </tbody>
+                        </table>
                     </div>
 
                 </div>

@@ -7,12 +7,19 @@
 
 }
 
+.bottom-border {
+    border-bottom: 2px solid rgb(31, 31, 31);
+    padding-bottom: 20px;
+}
+
 .drink-title {
-    color: rgb(rgb(31, 31, 31));
+    color: rgb(31, 31, 31);
     font-size: 3em;
     font-variant: small-caps;
     font-family: 'Playfair Display', serif;
-    font-weight: 800;
+    font-weight: bolder;
+    margin-top: 15px;
+    margin-bottom: -5px;
 }
 
 .drinks-menu {
@@ -26,42 +33,89 @@
 }
 
 .divider.black {
-    background-color: black;
+    background-color:  rgb(31, 31, 31);
 }
 
 .soft-drinks {
-    border-right: 2px solid black;
+    border-right: 2px solid  rgb(31, 31, 31);
+}
+
+.beers {
+    border-left: 2px solid  rgb(31, 31, 31);
+
 }
 
 .divider.thin {
+    margin-top: 15px;
+    margin-bottom: 15px;
     height: 2px;
 }
 
 .drink-entry {
-    display: flex;
+    display: table;
     align-items: center;
     font-family: 'Playfair Display', serif;
     font-weight: bold;
     font-size: 1.5em;
     /* vertical-align: auto; */
+    width: 100%;
+    table-layout: fixed;
+    
 }
 
 .drink-entry-name {
-    width: auto;
+    /* row */
+    display: table-cell;
+
+    width: 60%;
     text-align: left;;
     /* flex: 0; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   
+}
 
+table {
+    font-weight: 300;
+}
+
+.drink-entry-name:hover {
+    white-space: pre-wrap;
 }
 
 .drink-entry-units {
     /* min-width: 20%; */
+    display: table-cell;
+    /* text-align: left;; */
+    width: 20%;
+    font-variant: small-caps;
+    /* font-size: 1.5em; */
+
 }
+
+
 
 .drink-entry-price {
         /* display: inline-block; */
     /* vertical-align: baseline; */
     /* display: inline; */
-    float: right;
-    text-align: right;
+    /* float: right; */
+    display: table-cell;
+
+    text-align: center;
     
 }
+
+.helper {
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;
+}
+
+table tr {
+    margin-top: 4px;
+    margin-bottom: 5px;
+
+}
+
