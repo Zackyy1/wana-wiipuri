@@ -3,7 +3,8 @@ import './css/Drinks.css'
 import Cookies from 'universal-cookie';
 import data from '../../languages';
 import ints from '../../images/WW_indrek.png';
-
+import $ from 'jquery';
+import '../../libraries/corner.js';
 export class Drinks extends Component {
 
     /**
@@ -13,7 +14,21 @@ export class Drinks extends Component {
      */
 
 
-
+    // componentDidMount() {
+    //     $(function(){
+    //         $('div.round').each(function() {
+    //             console.log(this);
+    //             var q = $(this).corner("bite");
+    //             // eval(q);
+    //         });
+    //         $('div.round-out').each(function() {
+    //             console.log(this);
+    //             var q = $(this).corner("bite 10px").css('color', '[0,0,0,0]').parent().css('padding', '8px').corner("bite 10px");
+    //             // eval(q);
+    //         });
+    //     });
+    // }
+    
 
     getArrayOfItems(path, type) {
         var array = [];
@@ -35,7 +50,7 @@ export class Drinks extends Component {
                     (<td className="drink-entry-name">{drinkEntry['name']}</td>) }
                     { drinkEntry['unit'] ? 
                     <td className="drink-entry-units">{drinkEntry['amount']+drinkEntry['unit']} </td> :
-                    null}
+                    <td className="drink-entry-units helper">{data.text.drink_info['blank']}</td>}
                     <td className="drink-entry-price">{drinkEntry['price']}</td>
                     {/* <p className="drink-entry-name">{drinkEntry[lang]}</p> */}
                 </tr>
@@ -158,6 +173,34 @@ export class Drinks extends Component {
                         </table>
                     </div>
 
+                </div>
+
+                <div className="row">
+                    <div className="col-8 hot-drinks">
+                        <div className="round hot-title" id="hot-title">
+                            <div className="round-2">
+                                <h2 className="hot-title">{ data.text.drink_info.hot[lang] }</h2>
+                            </div>
+                            <table  id="hot-table">
+                                <tbody>
+                                    {/* HELPERS */}
+                                    <tr className="drink-entry">
+                                        <td className="drink-entry-name helper">{data.text.drink_info['blank']}</td>
+                                        <td className="drink-entry-units helper">{data.text.drink_info['blank']}</td>
+                                        <td className="drink-entry-price helper">{data.text.drink_info.price[lang]}</td>
+                                    </tr>
+                                    <tr>
+                                <td className="divider thin black"></td>
+                            </tr>
+                                    {this.makeDrinks('drinks', 'hot', lang)}
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                    </div>
+                    <div className="col-4">
+                    
+                    </div>
                 </div>
                 
             </div>
