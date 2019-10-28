@@ -15,7 +15,6 @@ const data = {
                 fi: 'gin',
                 et: 'džinn',
             },
-
             size: {
                 en: 'size',
                 ru: 'размер',
@@ -51,6 +50,54 @@ const data = {
                 ru: 'горячие напитки',
                 fi: 'kuumia juomia',
                 et: 'kuumad joogid',
+            },
+            whiskey: {
+                en: 'whiskey',
+                ru: 'whiskey',
+                fi: 'whiskey',
+                et: 'whiskey',
+            },
+            armagnac: {
+                en: 'armagnac and calvados',
+                ru: 'арманьяк и кальвадос',
+                fi: 'armagnac ja calvados',
+                et: 'armagnac ja calvados',
+            },
+            rum: {
+                en: 'rum',
+                ru: 'ром',
+                fi: 'rum',
+                et: 'rum',
+            },
+            vodka: {
+                ru: "водка",
+                fi: "vodka",
+                et: "viin",
+                en: "vodka"
+            },
+            cognac_brandy_1: {
+                ru: "коньяк",
+                fi: "cognac",
+                et: "cognac",
+                en: "cognac"
+            },
+            cognac_brandy_2: {
+                ru: "и",
+                fi: "ja",
+                et: "ja",
+                en: "and"
+            },
+            cognac_brandy_3: {
+                ru: "бренди",
+                fi: "brandy",
+                et: "brandy",
+                en: "brandy"
+            },
+            liqueur: { 
+                ru: "ликёр",
+                fi: "liqueur",
+                et: "liqueur",
+                en: "liqueur"
             }
         },
         starters: {
@@ -94,6 +141,13 @@ const data = {
             en: "Wiipuri Relish",
             et: "Wiipuri Hõrgutis",
             fi: "Wiipurilainen Herkkuateria"
+        },
+        wines: {
+            key: "wines",
+            ru: "Винная карта",
+            en: "Wine card",
+            et: "Veinikaart",
+            fi: "Viinikortti"
         },
         group: {
             key: "group",
@@ -792,7 +846,7 @@ const data = {
                 unit: 'cl',
             },
         },
-        liquer: {
+        liqueur: {
             vana_tallinn: {
                 key: 'vana_tallinn',
                 price: '4,8',

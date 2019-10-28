@@ -4,7 +4,7 @@ export class Gallery extends Component {
     render() {
         return (
             <div>
-                <h2 className="gallery-title">Gallery goes here</h2>
+                <h2 className="gallery-title">GALLERY COMING SOON</h2>
             </div>
         )
     }

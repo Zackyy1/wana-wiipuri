@@ -207,7 +207,7 @@ h1 {
 } */
 
 .nav-button {
-    width: 28vw;
+    width: 20vw;
     color: #E7503D;
     font-size: 1.5em;
     overflow-wrap: normal;
@@ -239,7 +239,7 @@ h1 {
 }
 
 .nav-button-dropdown {
-    width: calc(28vw - 4px);
+    width: calc(20vw - 4px);
     color: #E7503D;
     font-size: 1.5em;
     overflow-wrap: normal;

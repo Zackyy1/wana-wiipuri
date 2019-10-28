@@ -42,6 +42,9 @@ export class Navbar extends Component {
     toDrinks() {
         this.props.history.push("/drinks")
     }
+    toWines() {
+        this.props.history.push("/wines")
+    }
     goHome() {
         this.props.history.push("/")
     }
@@ -108,6 +111,7 @@ export class Navbar extends Component {
 
     <div className="nav-panel">
             <button onClick={() => this.toDrinks()}  className="nav-button">{data.text.drinks[lang]}</button>
+            <button onClick={() => this.toWines()}  className="nav-button">{data.text.wines[lang]}</button>
 
             <div className="dropdown">
                 <button className="nav-button dropdown-toggle" id="menuDropdownButton" data-toggle="dropdown-disabled" aria-haspopup="true" aria-expanded="true">{data.text.menu[lang]}</button>
