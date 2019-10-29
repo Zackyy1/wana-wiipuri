@@ -216,6 +216,8 @@ h1 {
     font-weight: bold;
     border-bottom: solid #E7503D 2px;
     border-top: solid #E7503D 2px;
+    font-family: 'IM Fell Double Pica', serif;
+    font-variant: small-caps;
 
 }
 
@@ -246,6 +248,8 @@ h1 {
     background: none;
     border: none;
     font-weight: bold;
+    font-family: 'IM Fell Double Pica', serif;
+    font-variant: small-caps;
 
 }
 
