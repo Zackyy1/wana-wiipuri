@@ -298,6 +298,10 @@ h1 {
 
 
 
+#menu-dropdown:hover ~ #menu-dropdown {
+    display: block;
+    /* transition: display 1s 1s; */
+}
 #menu-dropdown:hover {
     display: block;
     transition: 1s;
